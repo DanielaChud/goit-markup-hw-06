@@ -50,8 +50,8 @@
         <h2 class="visually-hidden">About</h2>
         <ul class="about-list">
             <li class="about-list-item">
-                <div class="about-icon">
-                    <svg class="" width="64" height="64">
+                <div class="about-icon-box">
+                    <svg class="about-icon" width="64" height="64">
                       <use href="./images/icons.svg#icon-antenna-1"></use>
                     </svg>
                   </div>
@@ -60,8 +60,8 @@
                     problem to walk away with the perfect and creative solution. </p>
             </li>
             <li class="about-list-item">
-                <div class="about-icon">
-                <svg class="" width="64" height="64">
+                <div class="about-icon-box">
+                <svg class="about-icon" width="64" height="64">
                     <use href="./images/icons.svg#icon-clock-1"></use>
                   </svg>
                 </div>
@@ -69,8 +69,8 @@
                     <p class="list-text">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li class="about-list-item">
-                <div class="about-icon">
-                    <svg class="" width="64" height="64">
+                <div class="about-icon-box">
+                    <svg class="about-icon" width="64" height="64">
                         <use href="./images/icons.svg#icon-diagram-1"></use>
                       </svg>
                     </div>
@@ -78,8 +78,8 @@
                     <p class="list-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.</p>
             </li>
             <li class="about-list-item">
-                <div class="about-icon">
-                    <svg class="" width="64" height="64">
+                <div class="about-icon-box">
+                    <svg class="about-icon" width="64" height="64">
                         <use href="./images/icons.svg#icon-astronaut-1"></use>
                       </svg>
                     </div>
@@ -95,7 +95,9 @@
     <h2 class="team-title">Our Team</h2>
     <ul class="team-list">
         <li class="team-list-item">
-            <img src="./images/markguerrero.jpg" alt="Foto Mark Guerrero"
+            <img src="./images/markguerrero.jpg"
+            srcset="./images/markguerrero.jpg 1x, ./images/team1.jpg 2x" 
+            alt="Foto Mark Guerrero"
             width="264"
             height="260"/>
             <div class="name-team">
@@ -135,7 +137,9 @@
         </div>
         </li>
         <li class="team-list-item">
-            <img src="./images/tomford.jpg" alt="Foto Tom Ford"
+            <img src="./images/tomford.jpg" 
+            srcset="./images/tomford.jpg 1x, ./images/team2.jpg 2x"
+            alt="Foto Tom Ford"
             width="264"
             height="260"/>
            <div class="name-team">
@@ -175,7 +179,9 @@
         </li>
   
         <li class="team-list-item">
-            <img src="./images/camilagarcia.jpg" alt="Foto Camila Garcia"
+            <img src="./images/camilagarcia.jpg"
+            srcset="./images/camilagarcia.jpg 1x, ./images/team3.jpg 2x"
+            alt="Foto Camila Garcia"
             width="264"
             height="260"/>
            <div class="name-team">
@@ -215,7 +221,9 @@
         </li>
     
         <li class="team-list-item">
-            <img src="./images/danielwilson.jpg" alt="Foto Daniel Wilson"
+            <img src="./images/danielwilson.jpg" 
+            srcset="./images/danielwilson.jpg 1x, ./images/team4.jpg 2x"
+            alt="Foto Daniel Wilson"
             width="264"
             height="260"/>
             <div class="name-team">
@@ -501,6 +509,66 @@
           <button class="submit-btn" type="submit">Send</button>
         </form>
       </div>
+    </div>
+    <div class="mobile-menu">
+      <button type="button" class="mobile-btn">
+        <svg class="mobile-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-list">
+        <li class="mobile-list-item">
+          <a class="mobile-link current" href="">Studio</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-link" href="">Portfolio</a>
+        </li>
+        <li class="mobile-list-item">
+          <a class="mobile-link" href="">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-address-list">
+        <li class="mobile-address-item">
+          <a class="mobile-address-item-link accent" href="tel:+110001111111"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li class="mobile-address-item">
+          <a class="menu-address-item-link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials-list">
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="socials-link">
+            <svg class="socials-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
 </body>
 </html>
