@@ -1,3 +1,7 @@
+
+.hide {
+  display: none;
+}
 body  {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -18,35 +22,39 @@ ul {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 .container {
-    max-width: 320px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-  
- }
- @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
- }
- @media screen and (min-width: 1158px) {
- .container {
-  max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
- }
- }
- .section {
-  padding: 120px 0;
+  max-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+      max-width: 1158px;
+      padding: 0 15px;
+  }
+}
+
+.section {
+  padding: 96px 0;
+}
+
 @media screen and (min-width: 1158px) {
   .section {
       padding: 120px 0;
   }    
 }
+
 .page-header {
   border-bottom: 1px solid #E7E9FC;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -184,7 +192,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 188px 0;
 flex-shrink: 0;
 text-align: center;
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officeM.jpg);
 background-repeat: no-repeat;
 background-position: center;
 max-width: 1440px;
@@ -227,8 +235,8 @@ color: #FFF;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
-letter-spacing: 0.04em;
-margin: 0 auto;
+letter-spacing: 0.64px;
+margin: auto;
 height: 56px;
 min-width: 169px;
 border-radius: 4px;
@@ -267,22 +275,14 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .about-list {
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   gap: 24px;    
 }
 
 .about-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
-.about-icon-box {
-  height: 112px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #F4F4FD;
-  border: 1px solid #8E8F99;
-  border-radius: 4px;
-  margin-bottom: 8px;
-  }
+
   @media screen and (max-width: 1157.97px) {
     .about-icon {
         display: none;
@@ -300,7 +300,13 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       margin-bottom: 8px;
   }
 }
-
+.about-list-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+}
+@media screen and (min-width: 1158px) {
  .about-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -309,6 +315,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   line-height: 1.2;
   margin-bottom: 8px;
  } 
+}
  .list-text { 
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -354,8 +361,11 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list {
   display: flex;
-  gap: 24px;
-  margin-right: 24px;
+    width: 100%;
+    row-gap: 72px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (min-width: 768px) {
   .team-list {
@@ -384,9 +394,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .team-list-item {
     background-color: #ffffff;
     text-align: center;
-    flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
-box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 @media screen and (min-width: 1158px) {
   .team-list-item {
@@ -447,8 +456,7 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
+  flex-direction: column;
   row-gap: 48px;
 }
 @media screen and (min-width: 768px) {
@@ -470,10 +478,9 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 }
 
 .portfolio-list-item {
-  width: calc((100% - 48px) / 3);
-  transition-property: box-shadow;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+
 @media screen and (min-width: 768px) {
   .portfolio-list-item {
       width: calc((100% - 1 * 24px) / 2);
@@ -482,7 +489,9 @@ box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47,
 
 @media screen and (min-width: 1158px) {
   .portfolio-list-item {
-      width: calc((100% - 2 * 48px) / 3);
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: calc((100% - 2 * 24px) / 3);
   }
 }
 
