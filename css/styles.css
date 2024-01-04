@@ -1185,7 +1185,7 @@ input:focus + label > span {
   background-color: #fff;
 }
 
-.menu-socials-list {
+.mobile-socials-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1193,7 +1193,7 @@ input:focus + label > span {
   margin-top: 48px;
 }
 
-.menu-socials-item {
+.mobile-socials-item {
   width: 40px;
   height: 40px;
 }
