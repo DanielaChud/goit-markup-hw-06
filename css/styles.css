@@ -182,14 +182,13 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .address-list {
       flex-wrap: wrap;
       gap: 12px;
-      padding-top: 16px;
-      padding-right: 16px;
-      padding-bottom: 16px;
+      flex-direction: column;
+      padding: 0;
   }
 }
 .main-page {
   background-color: #2e2f42;
-  padding: 188px 0;
+  padding: 72px 0;
 flex-shrink: 0;
 text-align: center;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-officeM.jpg);
@@ -199,7 +198,37 @@ max-width: 1440px;
 background-size: cover;
 margin: auto;
    }
-   main-page-con {
+   @media (min-resolution: 192dpi) {
+.main-page { 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-officeM2x.jpg);
+  }
+}
+@media only screen and (min-width: 768px) { 
+  .main-page { 
+      padding: 112px 0; 
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-officeT.jpg); 
+  } 
+} 
+
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) { 
+  .main-page { 
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-officeT2x.jpg); 
+  } 
+} 
+
+@media only screen and (min-width: 1158px) { 
+  .main-page { 
+      padding: 188px 0; 
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
+  } 
+} 
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) { 
+  .main-page { 
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg); 
+  } 
+}
+   .main-page-con {
    
     background-repeat: no-repeat;
     background-position: center;
@@ -276,12 +305,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 24px;    
+  row-gap: 72px;    
 }
 
-.about-list-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-}
 
   @media screen and (max-width: 1157.97px) {
     .about-icon {
@@ -319,6 +345,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
  .list-text { 
   line-height: 1.5;
   letter-spacing: 0.02em;
+  font-weight: 500;
+}
+@media screen and (min-width: 1158px) { 
+  .list-text { 
+      font-weight: 400; 
+  } 
 }
 @media screen and (min-width: 768px) {
   .about-list {
@@ -426,11 +458,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   gap: 24px;
   justify-content: center;
+  align-items: center; 
+  margin-top: 8px; 
+  }
+  icon {
+    width: 40px; 
+    height: 40px; 
   }
   
   .icon-social {
   fill: #F4F4FD;
   }
+  
   
   .icon-link {
   display: flex;
